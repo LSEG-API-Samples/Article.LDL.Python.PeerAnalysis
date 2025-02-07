@@ -1,0 +1,49 @@
+{    
+    "logs": {
+        "level": "debug",
+        "transports": {
+            "console": {
+                "enabled": false
+            },
+            "file": {
+                "enabled": false,
+                "name": "lseg-data-lib.log"
+            }
+        }
+    },
+    "http": {
+        "request-timeout": 6000
+  },
+    "sessions": {
+        "default": "desktop.workspace",
+        "platform": {
+            "ldp": {
+                "app-key": "<app key>",
+                "username": "<username>",
+                "password": "<password>",
+                "signon_control":true
+            },
+            "ldpv2": {                
+                "client_id": "<client id>",
+                "client_secret": "<client secret>",
+                "app-key": "<app key>"
+            },            
+            "deployed": {
+                "app-key": "YOUR APP KEY GOES HERE!",
+                "realtime-distribution-system": {
+                    "url" : "YOUR DEPLOYED HOST:PORT GOES HERE!",
+                    "dacs" : {
+                        "username" : "YOUR DACS ID GOES HERE!",
+                        "application-id" : 256,
+                        "position" : ""
+                    }
+                }
+            }
+        },
+        "desktop": {
+            "workspace": {
+                "app-key": "<app key>"
+            }
+        }
+    }
+}
